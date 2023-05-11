@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+ul>li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 8px solid #fff; 
+    z-index: 10;
+}
+.header::before {
+    
+}
+.container {
+    max-width: 1141px;
+    margin: 0 auto;
+}
+.header__container {
+
+}
+.nav {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+.nav__logo {
+    text-align: center;
+    transform: scale(90deg);
+    margin-right: 48px;
+}
+.logo__img {
+    transform: scale(90deg);
+}
+.nav__logo-letters {
+    display: flex;
+}
+.nav__list {
+    display: flex;
+    column-gap: 48px;
+}
+.nav__link {
+    color: white;
+}
+.main {
+
+}
+.poem {
+    background: url(../img/bg/poem_bg.jpg)no-repeat center/cover;
+    padding: 148px;
+    height: 100%;
+    position: relative;
+}
+.poem::before {
+    content: "";
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.68) 0%, rgba(245, 245, 245, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 5;    
+}
+.poem__container {
+    display: flex;
+    justify-content: space-between;
+}
+.poem__column:first-child {
+    position: absolute;
+    transform: translate(-110px, 188px);
+    z-index: 10;
+    color: black;
+}
+.poem__column:last-child {
+    position: relative;
+    transform: translate(380px, -20px);
+    color: white;
+    z-index: 18;
+}
+.poem__title {}
+.poem__text {
+    font-family: 'Times New Roman', Times, serif;
+}
+.congratulate {
+    background: url(../img/bg/congratulate_bg.jpg) no-repeat center/cover;
+    min-height: 100vh;
+    text-align: center;
+    padding: 180px;
+}
+.congratulate__container {
+    color: #fff;
+    min-height: 100%;
+}
+.subtitle {
+    font-family: Marck Script;
+}
+.v {
+    font-size: 18px;
+}
+.victoric_symbols {
+    background: url(../img/bg/victoric_symbols_bg.jpg) no-repeat center/cover;
+}
+.victoric_symbols__container {
+    min-height: 100vh;
+    padding: 80px 0px;
+}
+.symbols {
+    text-align: center;
+    margin-bottom: 80px;
+    color: rgb(255, 255, 255);
+}
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+}
+.anvantage {
+    width: 210px;
+    height: 180px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 18px;
+    padding: 18px;
+}
+.advantage__img-wrap {
+    display: none;
+}
+.advantage__img {
+    width: 18px;
+    height: auto;
+}
+.advantage__text {
+    font-size: auto;
+}
+.victory_order {
+    background: url(../img/bg/victory_order_bg.jpg) no-repeat center/cover;
+}
+.victory_order__container {
+   min-height: 100vh;
+}
+.victory_order__img__wrap {
+    width: 208px;
+    height: 208px;
+    place-self: center center;
+}
+.victory_order__img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .victoric_symbols {
+        background: url(../img/bg/victoric_symbols_bg768px.jpg) no-repeat center/cover;
+    }
+    .victoric_symbols__container {
+        min-height: 100%;
+        padding: 80px 0px;
+    }
+    .symbols {
+        text-align: center;
+        margin-bottom: 80px;
+        color: rgb(255, 255, 255);
+    }
+    .advantages {
+        flex-direction: column;
+        row-gap: 40px;
+        flex-wrap: nowrap;
+    }
+    .advantage {
+        width: 700px;
+        height: 100px;
+        background-color: darkorange;
+        display: flex;
+        border-radius: 5px;
+    }
+    .advantage__img {
+        width: 60px;
+        height: auto;
+    }
+    .advantage__text {
+        font-size: auto;
+    }
+    .victory_order {
+        background: url(../img/bg/victory_symbols_background.jpg) no-repeat center/cover;
+    }
+    .victory_order__container {
+       flex-direction: column;
+    }
+}
+
+@media (max-width=768px) {
+    
+}
